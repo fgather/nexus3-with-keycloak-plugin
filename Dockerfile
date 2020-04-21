@@ -19,7 +19,7 @@ ENV KEYCLOAK_PLUGIN /org/github/flytreeleft/nexus3-keycloak-plugin/${KEYCLOAK_PL
 
 USER root
 
-ADD https://github.com/flytreeleft/nexus3-keycloak-plugin/releases/download/v${KEYCLOAK_PLUGIN_RELEASE}/nexus3-keycloak-plugin-${KEYCLOAK_PLUGIN_VERSION}.jar \
+ADD https://github.com/flytreeleft/nexus3-keycloak-plugin/releases/download/${KEYCLOAK_PLUGIN_RELEASE}/nexus3-keycloak-plugin-${KEYCLOAK_PLUGIN_VERSION}.jar \
      ${NEXUS_PLUGINS}${KEYCLOAK_PLUGIN}.jar
 
 RUN chmod 644 ${NEXUS_PLUGINS}/org/github/flytreeleft/nexus3-keycloak-plugin/${KEYCLOAK_PLUGIN_RELEASE}/nexus3-keycloak-plugin-${KEYCLOAK_PLUGIN_VERSION}.jar
