@@ -14,7 +14,7 @@ ENV NEXUS_PLUGINS ${NEXUS_HOME}/system
 
 # https://github.com/flytreeleft/nexus3-keycloak-plugin
 ENV KEYCLOAK_PLUGIN_VERSION 0.4.0-SNAPSHOT
-ENV KEYCLOAK_PLUGIN_RELEASE 0.4.0-SNAPSHOT
+ENV KEYCLOAK_PLUGIN_RELEASE 0.4.0-prev2-SNAPSHOT
 ENV KEYCLOAK_PLUGIN /org/github/flytreeleft/nexus3-keycloak-plugin/${KEYCLOAK_PLUGIN_RELEASE}/nexus3-keycloak-plugin-${KEYCLOAK_PLUGIN_VERSION}
 
 USER root
